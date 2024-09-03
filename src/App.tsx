@@ -10,14 +10,10 @@ export default function App() {
   const [mainData,setMainData]=useState();
   //const [footerData,setFooterData]=useState();
   const [error,setError]=useState();
-
-  const [body,setBody]=useState<any>();
-
   //make the api call after the first mount
   useEffect(()=>{
     axios.get(url).then((response)=>{
       console.log(response.data.Body[0].About);
-      setBody(response.data.Body)
       setMainData(response.data);
     }
     ).catch((error)=>{
