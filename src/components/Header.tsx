@@ -1,9 +1,7 @@
 import {motion} from 'framer-motion'
 
-interface BodyProps{
-  items:any
-}
-const Header: React.FC<BodyProps> = ({body}:BodyProps) => {
+
+const Header = () => {
 
   return (
     <div className="flex justify-center items-center flex-col">

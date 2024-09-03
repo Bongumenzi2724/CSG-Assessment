@@ -45,7 +45,7 @@ export default function App() {
   return (
     <main className="flex justify-center items-center flex-col px-5 py-5 gap-8">
       <div className="flex justify-center items-center flex-col gap-5">
-        <Header body={body}/>
+        <Header/>
         <section className="flex justify-center items-center">
           <MainCard/>
         </section>
